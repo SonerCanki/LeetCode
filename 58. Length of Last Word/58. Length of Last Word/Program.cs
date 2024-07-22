@@ -4,8 +4,7 @@ Console.WriteLine(LengthOfLastWord(testString));
 
 int LengthOfLastWord(string s)
 {
+    var a = s.Split(" ").Where(x => x.Length > 0).LastOrDefault().Length;
 
-    var a= s.Split(" ").Where(x => x.Length > 0).LastOrDefault().Length
-
-    return s.Length;
+    return a;
 }
